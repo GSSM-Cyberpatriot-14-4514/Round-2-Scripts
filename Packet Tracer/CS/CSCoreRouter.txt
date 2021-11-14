@@ -8,6 +8,8 @@ no ip domain-lookup
 interface G0/0
 no shutdown
 ip address 172.16.0.2 255.255.255.252
+ip ospf network point-to-point
+ip ospf 1 area 0
 exit
 
 interface G0/1

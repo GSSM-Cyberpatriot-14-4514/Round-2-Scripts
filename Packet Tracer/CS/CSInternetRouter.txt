@@ -8,14 +8,21 @@ no ip domain-lookup
 interface G0/0
 no shutdown
 ip address 16.34.34.2 255.255.255.0
+ip ospf network point-to-point
+ip ospf 1 area 0
+ip ospf cost 30
 exit
 
 interface G0/1
 no shutdown
 ip address 155.74.10.2 255.255.255.252
+ip ospf network point-to-point
+ip ospf 1 area 0
 exit
 
 interface G0/2
 no shutdown
 ip address 172.16.0.1 255.255.255.252
+ip ospf network point-to-point
+ip ospf 1 area 0
 exit
