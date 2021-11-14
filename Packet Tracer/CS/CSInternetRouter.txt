@@ -1,0 +1,21 @@
+enable
+config t
+hostname CSInternetRouter
+enable secret C1sc0R0cks
+service password-encryption
+no ip domain-lookup
+
+interface G0/0
+no shutdown
+ip address 16.34.34.2 255.255.255.0
+exit
+
+interface G0/1
+no shutdown
+ip address 155.74.10.2 255.255.255.252
+exit
+
+interface G0/2
+no shutdown
+ip address 172.16.0.1 255.255.255.252
+exit
