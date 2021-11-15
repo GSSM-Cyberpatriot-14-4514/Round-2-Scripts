@@ -24,3 +24,8 @@ interface G0/2
 no shutdown
 ip address 172.16.0.9 255.255.255.252
 exit
+!
+router ospf 1
+network 172.16.0.2 255.255.255.252
+redistribute static metric 1 subnets
+exit

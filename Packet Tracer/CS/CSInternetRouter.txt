@@ -38,4 +38,5 @@ router ospf 1
 network 16.34.34.0 0.0.0.255 area 0
 network 155.74.10.2 255.255.255.252 area 0
 network 172.16.0.1 255.255.255.252 area 0
+redistribute static metric 1 subnets
 exit
