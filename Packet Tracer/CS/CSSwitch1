@@ -1,3 +1,6 @@
+!
+! Config Script By 14-144515
+!
 enable
 config t
 hostname CSSwitch1

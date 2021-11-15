@@ -1,22 +1,25 @@
+!
+! Config Script By 14-144515
+!
 enable
 config t
 hostname RS1CoreRouter
 enable secret C1sc0R0cks
 service password-encryption
 no ip domain-lookup
-
+!
 interface G0/0
 no shutdown
 ip address 172.16.1.2 255.255.255.252
 ip ospf network point-to-point
 ip ospf 1 area 0
 exit
-
+!
 interface G0/1
 no shutdown
 ip address 172.16.1.5 255.255.255.252
 exit
-
+!
 interface G0/2
 no shutdown
 ip address 172.16.1.9 255.255.255.252
