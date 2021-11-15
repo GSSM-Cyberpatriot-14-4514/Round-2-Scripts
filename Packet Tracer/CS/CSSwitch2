@@ -1,9 +1,0 @@
-!
-! Config Script By 14-144515
-!
-enable
-config t
-hostname CSSwitch1
-enable secret C1sc0R0cks
-service password-encryption
-no ip domain-lookup
