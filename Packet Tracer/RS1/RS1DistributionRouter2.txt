@@ -3,7 +3,7 @@
 !
 enable
 config t
-hostname RS1DistributionRouter1
+hostname RS1DistributionRouter2
 enable secret C1sc0R0cks
 service password-encryption
 no ip domain-lookup

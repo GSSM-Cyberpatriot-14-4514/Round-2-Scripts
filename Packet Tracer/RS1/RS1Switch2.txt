@@ -3,7 +3,7 @@
 !
 enable
 config t
-hostname RS1Switch1
+hostname RS1Switch2
 enable secret C1sc0R0cks
 service password-encryption
 no ip domain-lookup
