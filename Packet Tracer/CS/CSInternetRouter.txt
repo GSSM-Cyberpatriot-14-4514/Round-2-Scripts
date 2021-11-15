@@ -40,3 +40,8 @@ network 155.74.10.2 255.255.255.252 area 0
 network 172.16.0.1 255.255.255.252 area 0
 redistribute static metric 1 subnets
 exit
+!
+!
+!
+exit
+copy run start

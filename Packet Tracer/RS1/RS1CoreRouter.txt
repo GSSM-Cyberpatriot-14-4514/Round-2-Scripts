@@ -29,3 +29,8 @@ router ospf 1
 network 172.16.1.2 255.255.255.252
 redistribute static metric 1 subnets
 exit
+!
+!
+!
+exit
+copy run start

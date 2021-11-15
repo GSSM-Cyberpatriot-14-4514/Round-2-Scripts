@@ -55,3 +55,8 @@ no shutdown
 switchport mode access
 switchport access vlan 3
 exit
+!
+!
+!
+exit
+copy run start
