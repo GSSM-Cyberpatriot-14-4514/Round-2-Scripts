@@ -10,6 +10,8 @@ no shutdown
 ip address 16.34.35.2 255.255.255.0
 ip ospf network point-to-point
 ip ospf 1 area 0
+ip ospf hello-interval 5
+ip ospf dead-interval 20
 exit
 
 interface G0/1
@@ -18,6 +20,8 @@ ip address 155.74.10.6 255.255.255.252
 ip ospf network point-to-point
 ip ospf 1 area 0
 ip ospf cost 30
+ip ospf hello-interval 5
+ip ospf dead-interval 20
 exit
 
 interface G0/2
@@ -25,4 +29,10 @@ no shutdown
 ip address 172.16.1.1 255.255.255.252
 ip ospf network point-to-point
 ip ospf 1 area 0
+exit
+
+router ospf 1
+network 16.34.35.2 255.255.255.0 area 0
+network 155.74.10.5 0.0.0.3 area 0
+network 172.16.1.1 255.255.255.252 area 0 
 exit
