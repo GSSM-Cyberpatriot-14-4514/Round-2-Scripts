@@ -33,6 +33,14 @@ no shutdown
 ip address 172.16.1.65 255.255.255.248
 exit
 !
+interface port-channel 1
+no switchport
+exit
+!
+interface port-channel 2
+no switchport
+exit
+!
 interface range G1/0/3-4
 no shutdown
 switchport mode trunk
